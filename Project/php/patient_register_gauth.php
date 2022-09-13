@@ -8,13 +8,13 @@
     $google_client = new Google_Client();
 
     //Set the OAuth 2.0 Client ID
-    $google_client->setClientId('107553538088-p7ksheb7soqg9upffmnonlj5i5jaq0pe.apps.googleusercontent.com');
+    $google_client->setClientId('Your Client ID');
 
     //Set the OAuth 2.0 Client Secret key
-    $google_client->setClientSecret('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');
+    $google_client->setClientSecret('Your Client Secret');
 
     //Set the OAuth 2.0 Redirect URI
-    $google_client->setRedirectUri('http://localhost:8000/php/patient_register_gauth.php');
+    $google_client->setRedirectUri('Your RedirectURL');
 
     // Add Scopes
     $google_client->addScope('email');
@@ -28,7 +28,7 @@
 
         //This condition will check there is any error occur during geting authentication token. If there is no any error occur then it will execute if block of code/
         if(!isset($token['error'])){
-            
+
             //Set the access token used for requests
             $google_client->setAccessToken($token['access_token']);
 
@@ -44,17 +44,17 @@
             //Below you can find Get profile data and store into $_SESSION variable
             if(!empty($data['given_name'])){
                 $gfirst_name = $data['given_name'];
-                
+
             }
 
             if(!empty($data['family_name'])){
                 $glast_name = $data['family_name'];
-                
+
             }
 
             if(!empty($data['email'])){
                 $gmail = $data['email'];
-                
+
             }
 
 
@@ -106,6 +106,6 @@
 
     // Redirect to the generated URL to obtain email for authorization
     echo '<script>window.location= "'.$google_client->createAuthUrl().'";</script>';
-    }    
+    }
 
 ?>
