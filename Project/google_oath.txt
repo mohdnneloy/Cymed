@@ -1,0 +1,5 @@
+// Google OATH Client Credentials
+
+# Cymed client details
+    - Client ID = 107553538088-p7ksheb7soqg9upffmnonlj5i5jaq0pe.apps.googleusercontent.com
+    - Client Secret = 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

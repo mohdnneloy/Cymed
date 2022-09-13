@@ -1,0 +1,98 @@
+/* Imports ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+}
+
+.sidenav{
+    padding: 1%;
+    width: 15%;
+    background-color: rgb(51, 51, 51);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.sidenav-item{
+    padding: 3% 3%;
+    
+}
+
+.sidenav-item a{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;  
+    transition: .3s;  
+}
+
+.sidenav-item a:hover{
+    color: rgb(51, 250, 44);
+    transition: .3s;
+}
+
+
+.main{
+    padding: 5% 20%;
+}
+
+.heading{
+    border-bottom: 1px solid rgb(109, 109, 109);
+    width: 205%;
+    padding: 2% 0%;
+}
+
+
+.register-form{
+    width: 200%;
+    padding: 5%;
+    flex: 1;
+}
+
+.form-aregister{
+    border: 2px solid rgb(187, 187, 187);
+    padding: 5%;
+    border-radius: 10px;
+    max-width: 100%;
+    margin-left: 0%;
+}
+
+.form-aregister h3{
+    text-align: center;
+    padding-bottom: 4% ;
+    font-size: 140%;
+}
+
+.form-aregister label{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+.gender{
+    padding-top: 1%;
+}
+
+.male{
+    margin-left: 3%;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    padding: 1%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer p {
+    margin-top: 1%;
+}
+
+.submit-btn{
+    margin-top: 4%;
+}

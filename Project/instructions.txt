@@ -1,0 +1,27 @@
+// Installation Instruction For local use
+
+# 1. File Unzip 
+    - Unzip the the rar or zip file and place the whole folder into the this path -> "C:\xampp\htdocs"
+    - Alternatively you can make the php folder "C:\xampp\php" globally accessible, by adding this path to the "environment variables" this will allow
+      to create a local server and access any php from anwhere in the system. For further details and installation refere to this video -> https://youtu.be/rRCi3vW_cZw
+      If you consider the alternative option, then make sure to open the terminal from the "Project" folder that is the directory where this file "instructions.txt" is there.
+      After opening the terminal type this command "php -S localhost:8000" and type enter.
+      This wiill start the server.
+
+# 2. Database installation
+    - Create a database named "cymed" into you xampp localhost
+    - Import the "cymed.sql" file into the database you just created
+    - Check if the data has been imported. If not delete the database "cymed" and try again the above steps
+
+# 3. Composer
+    - Download the executable file of composer -> https://getcomposer.org/Composer-Setup.exe
+    - Intall the Composer with all the fedault settings. Just select on developer mode
+    - Composer might be required for the Google API to work
+    - Note that the "Login with Google" and "Register With Google" Options in the Patient Panel require Wifi Connection to Work
+
+# 4. Finale
+    - Once you have the local host running for the php files, and the databse service "xampp" running, you are good to go!
+
+# 5. For initial login to admin panel use
+    - Admin ID = 0000001
+    - Admin Password = john1234
